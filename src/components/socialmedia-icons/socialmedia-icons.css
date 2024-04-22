@@ -1,0 +1,20 @@
+.socialmedia-icons {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.icon-socialmedia {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  opacity: 0.5;
+  transition-duration: 0.4s;
+  color: var(--primary-color);
+}
+
+.icon-socialmedia:hover {
+  opacity: 1;
+}
