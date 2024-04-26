@@ -5,11 +5,18 @@
   max-width: 95vw;
   border-radius: 50%;
   margin: 0px;
-  position: fixed;
+  position: absolute;
   top: -700px;
   left: -200px;
-  z-index: -2;
+  z-index: -4;
   filter: blur(150px);
+}
+
+.noise-background{
+  z-index: -3;
+  position: absolute;
+  width: 100px;
+  height: 100px;
 }
 
 .header {
@@ -38,27 +45,6 @@ li {
   font-size: 18px;
 }
 
-.button {
-  display: flex;
-  justify-self: end;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border-radius: 40px;
-  border: 1px;
-  border-color: var(--primary-color);
-  padding: 10px 15px;
-  font-size: 18px;
-}
-
-.icon-bttn {
-  margin-right: 5px;
-  width: 14px;
-  align-self: center;
-}
-
-.icon-txt {
-  font-weight: 500;
-}
 
 .main-info {
   display: grid;
@@ -93,5 +79,5 @@ li {
 }
 
 .profile-pic {
-  width: 430px;
+  width: 350px;
 }

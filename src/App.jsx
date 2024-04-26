@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Hero from './components/hero/hero'
+import ProjectsFeed from './components/projects-feed/projects'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Hero/>
+      <ProjectsFeed/>
     </>
   )
 }

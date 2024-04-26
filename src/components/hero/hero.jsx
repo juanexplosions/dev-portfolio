@@ -1,11 +1,12 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import "./hero.css";
+import ButtonIcon from "../button-icon/button";
 import SocialMediaIcons from "../socialmedia-icons/socialmedia-icons";
 
 export default function Hero() {
   return (
     <>
       <div className="gradient-background"></div>
+      <div className="noise-background"></div>
       <div className="header">
         <img src="./src/assets/juanexplosions-logo.svg" className="logo" />
         <div className="nav-items">
@@ -23,10 +24,10 @@ export default function Hero() {
             </li>
           </ul>
         </div>
-        <button className="button">
-          <Icon icon="ri:mail-fill" className="icon-bttn" />
-          <p className="icon-txt">Contáctame</p>
-        </button>
+        <ButtonIcon
+          icon="ri:mail-fill"
+          text="Contáctame"
+        />
       </div>
       <div className="main-info">
         <h1 className="title">

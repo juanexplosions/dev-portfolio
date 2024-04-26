@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-self: end;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 40px;
+  border: 1px solid var(--primary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  max-height: 42px;
+}
+
+.icon-bttn {
+  margin-right: 5px;
+  width: 14px;
+  align-self: center;
+}
+
+.icon-txt {
+  font-weight: 300;
+}
