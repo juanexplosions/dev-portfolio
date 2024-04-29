@@ -28,7 +28,6 @@ export default function ProjectsFeed() {
           />
         </div>
       </div>
-      
       <div className="project">
         <div className="project-background"></div>
         <div className="project-container">
