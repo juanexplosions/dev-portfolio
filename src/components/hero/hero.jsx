@@ -6,10 +6,10 @@ export default function Hero() {
   return (
     <>
       <div className="gradient-background"></div>
-      <div className="noise-background"></div>
-      <div className="header">
+      <img src="src/assets/texture.png" className="grain-hero" />
+      <header className="header">
         <img src="./src/assets/juanexplosions-logo.svg" className="logo" />
-        <div className="nav-items">
+        <nav className="nav-items">
           <ul>
             <li>
               <a href="">PROYECTOS</a>
@@ -23,12 +23,12 @@ export default function Hero() {
               <a href="">MÁS SOBRE MÍ</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <ButtonIcon
           icon="ri:mail-fill"
           text="Contáctame"
         />
-      </div>
+      </header>
       <div className="main-info">
         <h1 className="title">
           <span class="frontend">Frontend Developer </span>

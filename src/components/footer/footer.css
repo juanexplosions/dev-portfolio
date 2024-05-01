@@ -1,0 +1,44 @@
+.gradient-background-footer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0px;
+  z-index: -4;
+}
+
+.grain-footer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    z-index: -3;
+    mix-blend-mode: overlay;
+    opacity: 1;
+  }
+
+  .footer-container{
+    position:relative;
+    padding-bottom: 10px;
+  }
+
+.footer-texts {
+  font-size: 24px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-right: 300px;
+  line-height: 30px;
+  color: var(--primary-color);
+}
+
+.cta-text {
+  margin-top: 50px;
+  font-size: 70px;
+  font-weight: 100;
+}
+
+.cta-mail {
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
