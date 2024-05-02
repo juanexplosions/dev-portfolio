@@ -44,6 +44,10 @@ li {
   margin: 0 3px;
 }
 
+a {
+  justify-self: end;
+}
+
 .nav-items {
   color: var(--primary-color);
   place-self: center;

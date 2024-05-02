@@ -1,55 +1,56 @@
+import React from 'react';
 import "./projects.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import ButtonIcon from "../button-icon/button";
 
+const projectsData = [
+  {
+    stack: "React.js + CSS",
+    title: "The Cat Button Meme",
+    description: "El botón que al oprimirlo te muestra aleatoriamente memes de gatos.",
+    imageSrc: "./src/assets/project-01.png",
+    demoText: "Probar el demo",
+    githubIcon: "ri:github-fill",
+    url: "https://the-cat-meme-button.netlify.app/",
+    github: "https://github.com/juanexplosions/the-cat-meme-button/"
+  },
+  {
+    stack: "React.js + CSS",
+    title: "cuentaclaras",
+    description: "Un tracker de ingresos y egresos, para saber en qué gastas tu dinero.",
+    imageSrc: "./src/assets/project-02.png",
+    demoText: "Probar el demo",
+    githubIcon: "ri:github-fill",
+    url: "https://cuentasclaras-app.netlify.app/",
+    github: "https://github.com/juanexplosions/cuentasclaras"
+  }
+];
+
 export default function ProjectsFeed() {
   return (
     <>
-      <p className="section-text">PROYECTOS</p>
-      <div className="project">
-        <div className="project-background"></div>
-        <div className="project-container">
-          <div className="project-texts">
-            <p className="details project-stack">React.js + CSS</p>
-            <p className="details project-title">The Cat Button Meme</p>
-            <p className="details project-description">
-              El botón que al oprimirlo te muestra aleatoriamente memes de
-              gatos.
-            </p>
+      <p className="section-text" id="proyectos">PROYECTOS</p>
+      {projectsData.map((project, index) => (
+        <div className="project" key={index}>
+          <div className="project-background"></div>
+          <div className="project-container">
+            <div className="project-texts">
+              <p className="details project-stack">{project.stack}</p>
+              <p className="details project-title">{project.title}</p>
+              <p className="details project-description">{project.description}</p>
+            </div>
+            <div className="project-cta">
+              <ButtonIcon icon="ri:earth-fill" text={project.demoText} url={project.url} />
+              <a href={project.github} target="_blank"><Icon icon={project.githubIcon} className="icon-project"/></a>
+            </div>
+            <img
+              className="project-image"
+              src={project.imageSrc}
+              alt=""
+            />
           </div>
-          <div className="project-cta">
-            <ButtonIcon icon="ri:earth-fill" text="Probar el demo" />
-            <Icon icon="ri:github-fill" className="icon-project" />
-          </div>
-          <img
-            className="project-image"
-            src="./src/assets/project-01.png"
-            alt=""
-          />
         </div>
-      </div>
-      <div className="project">
-        <div className="project-background"></div>
-        <div className="project-container">
-          <div className="project-texts">
-            <p className="details project-stack">React.js + CSS</p>
-            <p className="details project-title">The Cat Button Meme</p>
-            <p className="details project-description">
-              El botón que al oprimirlo te muestra aleatoriamente memes de
-              gatos.
-            </p>
-          </div>
-          <div className="project-cta">
-            <ButtonIcon icon="ri:earth-fill" text="Probar el demo" />
-            <Icon icon="ri:github-fill" className="icon-project" />
-          </div>
-          <img
-            className="project-image"
-            src="./src/assets/project-01.png"
-            alt=""
-          />
-        </div>
-      </div>
+      ))}
     </>
   );
 }

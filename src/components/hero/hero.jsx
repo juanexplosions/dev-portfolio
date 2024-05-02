@@ -12,21 +12,22 @@ export default function Hero() {
         <nav className="nav-items">
           <ul>
             <li>
-              <a href="">PROYECTOS</a>
+              <a href="#proyectos">PROYECTOS</a>
             </li>
             <li>-</li>
             <li>
-              <a href="">ARTÍCULOS</a>
+              <a href="#articulos">ARTÍCULOS</a>
             </li>
             <li>-</li>
             <li>
-              <a href="">MÁS SOBRE MÍ</a>
+              <a href="#mas-informacion">MÁS SOBRE MÍ</a>
             </li>
           </ul>
         </nav>
         <ButtonIcon
-          icon="ri:mail-fill"
+          icon="ri:linkedin-box-fill"
           text="Contáctame"
+          url="https://www.linkedin.com/in/juan-felipe-peralta/"
         />
       </header>
       <div className="main-info">

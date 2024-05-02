@@ -3,16 +3,16 @@ import "./socialmedia-icons.css";
 
 export default function SocialMediaIcons() {
   const socialMediaItems = [
-    { name: "linkedin-box-fill", url: "URL_de_LinkedIn" },
-    { name: "github-fill", url: "URL_de_GitHub" },
-    { name: "instagram-fill", url: "URL_de_Instagram" },
-    { name: "tiktok-fill", url: "URL_de_TikTok" },
+    { name: "linkedin-box-fill", url: "https://www.linkedin.com/in/juan-felipe-peralta/" },
+    { name: "github-fill", url: "https://github.com/juanexplosions" },
+    { name: "instagram-fill", url: "https://www.instagram.com/juanexplosions/" },
+    { name: "tiktok-fill", url: "https://www.tiktok.com/@juanexplosions" },
   ];
 
   return (
     <div className="socialmedia-icons">
       {socialMediaItems.map((item, index) => (
-        <a key={index} href={item.url}>
+        <a key={index} href={item.url} target="_blank">
           <Icon icon={`ri:${item.name}`} className="icon-socialmedia" />
         </a>
       ))}

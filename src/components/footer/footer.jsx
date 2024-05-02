@@ -4,7 +4,7 @@ import SocialMediaIcons from "../socialmedia-icons/socialmedia-icons";
 export default function Footer() {
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="mas-informacion">
         <footer className="footer-container">
         <img src="src/assets/footer-background.png" className="gradient-background-footer"/>
         <img src="src/assets/texture.png" className="grain-footer" />
@@ -18,9 +18,9 @@ export default function Footer() {
             </p>
             <br />
             <p>
-              Algunas veces me verás tomando fotos, diseñando en Figma los
-              proyectos que programo, dando cursos, o haciendo videos de
-              competencias de programación en YouTube.
+              Algunas veces me verás <a href="https://www.instagram.com/juanexplosions/" target="_blank">tomando fotos</a>, diseñando en Figma los
+              proyectos que programo, <a href="https://platzi.com/cursos/videos-tiktok/" target="_blank">enseñando en cursos</a>, o haciendo videos de 
+               <a href="https://youtu.be/O9xie_2RUtA?si=XHNznY4ja0pg5a6e" target="_blank"> competencias de programación</a> en YouTube.
             </p>
             <br />
             <p>¿Quieres que trabajemos juntos en algún proyecto?</p>
