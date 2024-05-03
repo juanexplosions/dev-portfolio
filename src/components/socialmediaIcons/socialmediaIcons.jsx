@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import "./socialmedia-icons.css";
+import "./socialmediaIcons.css";
 
 export default function SocialMediaIcons() {
   const socialMediaItems = [

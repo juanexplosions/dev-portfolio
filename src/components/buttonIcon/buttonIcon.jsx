@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import "./button.css";
+import "./buttonIcon.css";
 
 export default function ButtonIcon({ icon, text, url}) {
   return (

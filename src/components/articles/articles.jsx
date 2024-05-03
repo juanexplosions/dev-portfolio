@@ -1,5 +1,5 @@
 import "./articles.css";
-import ButtonIcon from "../button-icon/button";
+import ButtonIcon from "../buttonIcon/buttonIcon.jsx";
 
 const articlesData = [
   {
@@ -33,7 +33,7 @@ export default function Articles() {
       </p>
       <div className="articles-feed">
         {articlesData.map((article, index) => (
-          <div
+          <article
             className={`article ${index === 0 ? "first-article" : ""}`}
             key={article.id}
           >
@@ -48,7 +48,7 @@ export default function Articles() {
                 />
               </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </>

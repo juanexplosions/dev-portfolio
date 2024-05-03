@@ -1,5 +1,5 @@
 import "./footer.css";
-import SocialMediaIcons from "../socialmedia-icons/socialmedia-icons";
+import SocialMediaIcons from "../socialmediaIcons/socialmediaIcons";
 
 export default function Footer() {
   return (
@@ -7,6 +7,7 @@ export default function Footer() {
       <div className="footer" id="mas-informacion">
         <footer className="footer-container">
         <img src="src/assets/footer-background.png" className="gradient-background-footer"/>
+        <img src="src/assets/juanexplosions-icon-light.svg" className="footer-logo" />
         <img src="src/assets/texture.png" className="grain-footer" />
 
           <p className="section-text">MÁS SOBRE MÍ</p>
@@ -26,7 +27,7 @@ export default function Footer() {
             <p>¿Quieres que trabajemos juntos en algún proyecto?</p>
 
             <p className="cta-text">¡Hablemos!</p>
-            <p className="cta-mail">hola@juanexplosions.com</p>
+            <p className="cta-mail">Escríbeme en <a href="https://www.linkedin.com/in/juan-felipe-peralta/" target="_blank">LinkedIn</a></p>
             <SocialMediaIcons />
           </div>
         </footer>

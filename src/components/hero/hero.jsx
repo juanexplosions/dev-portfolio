@@ -1,6 +1,6 @@
 import "./hero.css";
-import ButtonIcon from "../button-icon/button";
-import SocialMediaIcons from "../socialmedia-icons/socialmedia-icons";
+import ButtonIcon from "../buttonIcon/buttonIcon.jsx";
+import SocialMediaIcons from "../socialmediaIcons/socialmediaIcons.jsx";
 
 export default function Hero() {
   return (
@@ -32,10 +32,10 @@ export default function Hero() {
       </header>
       <div className="main-info">
         <h1 className="title">
-          <span class="frontend">Frontend Developer </span>
+          <span className="frontend">Frontend Developer </span>
 
-          <span class="and">and</span>
-          <span class="content-creator"> content creator</span>
+          <span className="and">and</span>
+          <span className="content-creator"> content creator</span>
         </h1>
         <SocialMediaIcons />
         <div className="profile-container">
