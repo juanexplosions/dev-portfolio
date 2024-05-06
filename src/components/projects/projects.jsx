@@ -9,7 +9,7 @@ const projectsData = [
     title: "The Cat Button Meme",
     description:
       "El botón que al oprimirlo te muestra aleatoriamente memes de gatos.",
-    imageSrc: "./src/assets/project-01.png",
+    imageSrc: "public/project-01.png",
     demoText: "Probar el demo",
     githubIcon: "ri:github-fill",
     url: "https://the-cat-meme-button.netlify.app/",
@@ -20,7 +20,7 @@ const projectsData = [
     title: "cuentaclaras",
     description:
       "Un tracker de ingresos y egresos, para saber en qué gastas tu dinero.",
-    imageSrc: "./src/assets/project-02.png",
+    imageSrc: "public/project-02.png",
     demoText: "Probar el demo",
     githubIcon: "ri:github-fill",
     url: "https://cuentasclaras-app.netlify.app/",
