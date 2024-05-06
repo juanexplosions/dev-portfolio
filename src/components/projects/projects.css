@@ -1,83 +1,173 @@
-.section-text{
-    margin: 20px 40px;
-    color: var(--primary-color);
-    font-size: 24px;
+.section-text {
+  margin: 0px 40px;
+  color: var(--primary-color);
+  font-size: 24px;
 }
 
-.projects-feed{
-    display: grid;
-    gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+.projects-feed {
+  display: grid;
+  margin-top: 20px;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.project-container{
-    display: grid;
-    background: rgba(250, 250, 250, 35%);
-    border: 1px solid;
-    border-color: #FFFFFF;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 254, 5%);
-    grid-template-columns: auto 430px;
-    height: 250px;
-    grid-template-rows: auto 80px;
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-    padding: 30px 25px 0px 25px;
-    position: relative;
-    overflow: hidden;
-    font-size: 24px;
+.project-container {
+  display: grid;
+  background: rgba(250, 250, 250, 35%);
+  border: 1px solid;
+  border-color: #ffffff;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 254, 5%);
+  grid-template-columns: auto 430px;
+  height: 250px;
+  grid-template-rows: auto 80px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  padding: 30px 25px 0px 25px;
+  position: relative;
+  overflow: hidden;
+  font-size: 24px;
+  -webkit-transform: translateZ(0);
 }
 
-.project-background{
-    margin-left: 40px;
-    border-radius: 20px;
-    background: linear-gradient(0deg, rgba(0,0,254,1) 0%, rgba(160,241,198,1) 100%);
-    position: absolute;
-    height: 280px;
-    width: 250px;
-    z-index: -2;
-    filter: blur(100px);
-    opacity: 0.15;
+.project-background {
+  margin-left: 40px;
+  border-radius: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 254, 1) 0%,
+    rgba(160, 241, 198, 1) 100%
+  );
+  position: absolute;
+  height: 280px;
+  width: 250px;
+  z-index: -2;
+  filter: blur(100px);
+  opacity: 0.15;
 }
 
-.project-texts{
+.project-texts {
+  grid-row: 1/2;
+  padding-right: 20px;
+}
 
-    grid-row: 1/2;
+.details {
+  padding-top: 15px;
+  color: var(--tertiary-color);
+}
+
+.project-stack {
+  font-weight: 200;
+}
+
+.project-title {
+  font-weight: 700;
+}
+
+.project-cta {
+  display: flex;
+  grid-row: 2/3;
+}
+
+.icon-project {
+  font-size: 40px;
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+
+.project-image {
+  grid-row: 1/3;
+  grid-column: 2/3;
+  height: 280px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 254, 10%));
+  place-self: center;
+  position: fixed;
+  bottom: -30px;
+}
+
+@media screen and (max-width: 1070px) {
+  .projects-feed {
+    padding-left: 20px;
     padding-right: 20px;
-}
+  }
 
-.details{
-    padding-top: 15px;
-    color: var(--tertiary-color);
-}
+  .project-container {
+    grid-template-columns: auto 300px;
+    height: 200px;
+    font-size: 20px;
+  }
 
-.project-stack{
-    font-weight: 200;
-}
+  .project-background {
+    height: 230px;
+    width: 200px;
+  }
 
+  .project-texts {
+    padding-right: 70px;
+  }
 
-.project-title{
-    font-weight: 700;
-}
+  .project-title {
+    font-size: 20px;
+  }
 
-.project-cta{
-    display: flex;
-    grid-row: 2/3;
-}
+  .project-cta {
+    padding-top: 10px;
+  }
 
-.icon-project{
-    font-size: 40px;
-    color: var(--secondary-color);
-    margin-left: 10px;
-}
-
-.project-image{
-    grid-row: 1/3;
-    grid-column: 2/3;
-    height: 280px;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 254, 10%));
-    place-self: center;
-    position: fixed;
+  .project-image {
+    height: 230px;
+    padding-right: 40px;
     bottom: -30px;
+  }
+
+  .details {
+    padding-top: 8px;
+  }
+
+  .details-project {
+    padding-bottom: 10px;
+  }
+  .project-background {
+    margin-left: 0px;
+  }
+
+  .section-text {
+    margin: 0px 20px;
+  }
 }
 
+@media screen and (max-width: 800px) {
+  .section-text {
+    font-size: 18px;
+    margin: 0px 20px;
+    margin-top: 20px;
+  }
+
+  .project-cta {
+    padding-bottom: 200px;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 115px auto auto;
+    height: 360px;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .project-image {
+    grid-row: none;
+    height: 200px;
+    place-self: end;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    grid-column: 1/2;
+    padding: 0px;
+  }
+
+  .project-texts {
+    font-size: 18px;
+    padding-right: 0px;
+  }
+}

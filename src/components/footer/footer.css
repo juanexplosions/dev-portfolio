@@ -22,6 +22,7 @@
 }
 
 .footer-texts {
+  margin-top: 20px;
   font-size: 24px;
   margin-left: 40px;
   margin-right: 40px;
@@ -43,6 +44,10 @@
   margin-bottom: 45px;
 }
 
+.footer-title{
+  margin-top: 20px;
+}
+
 
 .footer-texts a {
   text-decoration: underline;
@@ -61,3 +66,76 @@
   margin-right: 40px;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 1070px){
+  .footer-texts{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 80px;
+    padding-right: 20px;
+    line-height: 24px;
+  }
+
+  .cta-text{
+    font-size: 60px;
+  }
+
+  .cta-mail{
+    font-size: 60px;
+  }
+
+  .footer-logo{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gradient-background-footer {
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    bottom: 0px;
+    z-index: -4;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .footer-texts{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-right: 20px;
+    line-height: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 254, 0.3);
+  }
+
+  .cta-text{
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .cta-mail{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+  }
+
+  .footer-title{
+    font-size: 20px;
+  }
+
+  .gradient-background-footer {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    bottom: 0px;
+    z-index: -4;
+  }
+}
+

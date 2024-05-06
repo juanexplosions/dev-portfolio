@@ -10,7 +10,7 @@ export default function Footer() {
         <img src="src/assets/juanexplosions-icon-light.svg" className="footer-logo" />
         <img src="src/assets/texture.png" className="grain-footer" />
 
-          <p className="section-text">MÁS SOBRE MÍ</p>
+          <p className="section-text footer-title">MÁS SOBRE MÍ</p>
           <div className="footer-texts">
             <p>
               Soy un ingeniero de sistemas que encontró en el content marketing

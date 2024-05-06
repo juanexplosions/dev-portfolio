@@ -20,3 +20,10 @@
 .icon-txt {
   font-weight: 300;
 }
+
+@media screen and (max-width: 800px){
+  .button {
+    font-size: 16px;
+    padding: 8px 8px;
+  }
+}
