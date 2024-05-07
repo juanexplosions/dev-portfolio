@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <>
       <div className="gradient-background"></div>
-      <img src="public/texture.png" className="grain-hero" />
+      <img src="/texture.png" className="grain-hero" />
       <header className="header">
-        <img src="public/juanexplosions-logo.svg" className="logo" />
+        <img src="/juanexplosions-logo.svg" className="logo" />
         <nav className="nav-items">
           <ul>
             <li>
@@ -39,7 +39,7 @@ export default function Hero() {
         </h1>
         <SocialMediaIcons />
         <div className="profile-container">
-            <img className="profile-pic" src="public/profile-pic.png" />
+            <img className="profile-pic" src="/profile-pic.png" />
         </div>
       </div>
     </>
