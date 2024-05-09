@@ -13,7 +13,7 @@ export default function Footer() {
           <p className="section-text footer-title">MÁS SOBRE MÍ</p>
           <div className="footer-texts">
             <p>
-              Soy un ingeniero de sistemas que encontró en el content marketing
+              Soy Juan Felipe Peralta: un ingeniero de sistemas que encontró en el content marketing
               una forma de enseñar. Lo que me llevó a trabajar en Platzi
               educando sobre ingeniería y desarrollo de software.
             </p>
