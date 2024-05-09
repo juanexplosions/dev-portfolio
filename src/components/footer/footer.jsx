@@ -6,9 +6,9 @@ export default function Footer() {
     <>
       <div className="footer" id="mas-informacion">
         <footer className="footer-container">
-        <img src="/footer-background.png" className="gradient-background-footer"/>
-        <img src="/juanexplosions-icon-light.svg" className="footer-logo" />
-        <img src="/texture.png" className="grain-footer" />
+        <img src="/footer-background.png" className="gradient-background-footer" alt="Fondo de la página"/>
+        <img src="/juanexplosions-icon-light.svg" className="footer-logo" alt="Isotipo de juanexplosions"/>
+        <img src="/texture.png" className="grain-footer" alt="Granulado para el fondo" />
 
           <p className="section-text footer-title">MÁS SOBRE MÍ</p>
           <div className="footer-texts">

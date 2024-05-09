@@ -11,7 +11,8 @@ const projectsData = [
       "El botón que al oprimirlo te muestra aleatoriamente memes de gatos.",
     imageSrc: "/project-01.png",
     demoText: "Probar el demo",
-    githubIcon: "ri:github-fill",
+    extraIcon: "ri:github-fill",
+    label: "GitHub",
     url: "https://the-cat-meme-button.netlify.app/",
     github: "https://github.com/juanexplosions/the-cat-meme-button/",
   },
@@ -22,18 +23,31 @@ const projectsData = [
       "Un tracker de ingresos y egresos, para saber en qué gastas tu dinero.",
     imageSrc: "/project-02.png",
     demoText: "Probar el demo",
-    githubIcon: "ri:github-fill",
+    extraIcon: "ri:github-fill",
+    label: "GitHub",
     url: "https://cuentasclaras-app.netlify.app/",
     github: "https://github.com/juanexplosions/cuentasclaras",
   },
+  {
+    stack: "Storytelling + Software Engineering",
+    title: "The Platzi",
+    description:
+      "Serie web que tuvo +12 millones de views. Relata la vida en el software.",
+    imageSrc: "/project-03.png",
+    demoText: "Ver la serie",
+    extraIcon: "ri:instagram-fill",
+    label: "Instagram",
+    url: "https://www.tiktok.com/@aprendeconplatzi/playlist/The%20Platzi-7225719594577873669",
+    github: "https://www.instagram.com/stories/highlights/17995345943469322/"
+  }
 ];
 
 export default function ProjectsFeed() {
   return (
     <>
-      <p className="section-text" id="proyectos">
+      <h2 className="section-text" id="proyectos">
         PROYECTOS
-      </p>
+      </h2>
       <div className="projects-feed">
         {projectsData.map((project, index) => (
           <div className="project" key={index}>
@@ -52,11 +66,11 @@ export default function ProjectsFeed() {
                   text={project.demoText}
                   url={project.url}
                 />
-                <a href={project.github} target="_blank">
-                  <Icon icon={project.githubIcon} className="icon-project" />
+                <a href={project.github} target="_blank" aria-label={project.label}>
+                  <Icon icon={project.extraIcon} className="icon-project" />
                 </a>
               </div>
-              <img className="project-image" src={project.imageSrc} alt="" />
+              <img className="project-image" src={project.imageSrc} alt="imagen de proyecto" />
             </div>
           </div>
         ))}

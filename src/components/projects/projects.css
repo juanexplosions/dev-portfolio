@@ -2,6 +2,7 @@
   margin: 0px 40px;
   color: var(--primary-color);
   font-size: 24px;
+  font-weight: 400;
 }
 
 .projects-feed {
@@ -62,6 +63,10 @@
 
 .project-title {
   font-weight: 700;
+}
+
+.project-description {
+  font-size: 20px;
 }
 
 .project-cta {
@@ -169,5 +174,9 @@
   .project-texts {
     font-size: 18px;
     padding-right: 0px;
+  }
+
+  .project-description {
+    font-size: 14px;
   }
 }
