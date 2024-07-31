@@ -9,7 +9,7 @@ const projectsData = [
     title: "MichiCONF 2024",
     description:
       "La conferencia anual hecha para gatitos. Para debatir sobre tecnología.",
-    imageSrc: "/project-01.png",
+    imageSrc: "/project-04.png",
     demoText: "Probar el demo",
     extraIcon: "ri:github-fill",
     label: "GitHub",
