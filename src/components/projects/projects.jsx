@@ -5,6 +5,18 @@ import ButtonIcon from "../buttonIcon/buttonIcon";
 
 const projectsData = [
   {
+    stack: "React.js + Sass + BEM",
+    title: "MichiCONF 2024",
+    description:
+      "La conferencia anual hecha para gatitos. Para debatir sobre tecnología.",
+    imageSrc: "/project-01.png",
+    demoText: "Probar el demo",
+    extraIcon: "ri:github-fill",
+    label: "GitHub",
+    url: "https://michiconf.netlify.app/",
+    github: "https://github.com/juanexplosions/michiconf",
+  },
+  {
     stack: "React.js + CSS",
     title: "The Cat Button Meme",
     description:
