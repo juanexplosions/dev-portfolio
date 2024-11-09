@@ -5,6 +5,23 @@ import ButtonIcon from "../buttonIcon/buttonIcon";
 
 const projectsData = [
   {
+    stack: "HTML + CSS",
+    title: "Platzi Business",
+    description:
+      "Landing page oficial para vender Platzi a empresas.",
+    imageSrc: "/project-06.png",
+    demoText: "Ver la página",
+    url: "https://platzi.com/business"
+  },{
+    stack: "HTML + CSS",
+    title: "Platzi and DeVry University",
+    description:
+      "Landing page oficial para la alianza entre Platzi y DeVry University.",
+    imageSrc: "/project-05.png",
+    demoText: "Ver la página",
+    url: "https://platzi.com/universidad"
+  },
+  {
     stack: "React.js + Sass + BEM",
     title: "MichiCONF 2024",
     description:
