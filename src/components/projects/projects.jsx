@@ -5,6 +5,15 @@ import ButtonIcon from "../buttonIcon/buttonIcon";
 
 const projectsData = [
   {
+    stack: "React.js + Next.js + Sass",
+    title: "Platzi and DeVry University",
+    description:
+      "Landing page oficial para la alianza entre Platzi y DeVry University.",
+    imageSrc: "/project-05.png",
+    demoText: "Ver la página",
+    url: "https://platzi.com/universidad"
+  },
+  {
     stack: "HTML + CSS",
     title: "Platzi Business",
     description:
@@ -12,14 +21,6 @@ const projectsData = [
     imageSrc: "/project-06.png",
     demoText: "Ver la página",
     url: "https://platzi.com/business"
-  },{
-    stack: "HTML + CSS",
-    title: "Platzi and DeVry University",
-    description:
-      "Landing page oficial para la alianza entre Platzi y DeVry University.",
-    imageSrc: "/project-05.png",
-    demoText: "Ver la página",
-    url: "https://platzi.com/universidad"
   },
   {
     stack: "React.js + Sass + BEM",
